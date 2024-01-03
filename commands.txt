@@ -1,0 +1,23 @@
+-- CONFIG --
+git config --global user.name "Panshoots"
+git config --global user.email "fr.juillet@profesor.duoc.cl"
+
+ionic generate page
+ionic generate service
+ionic generate component
+
+ionic generate page pages/loading
+ionic generate page pages/auth/login
+ionic generate page pages/auth/register
+ionic generate page pages/auth/recovery
+ionic generate page pages/home
+ionic generate page pages/home/pizza
+ionic generate page pages/home/despacho
+ionic generate page pages/home/
+
+ionic g service services/api
+ionic g service services/firebase
+
+ionic g component components/carduser
+ionic g component components/header
+ionic g component components/footer

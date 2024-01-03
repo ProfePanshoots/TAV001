@@ -1,0 +1,7 @@
+{
+  "name": "PizzeriaDuoc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

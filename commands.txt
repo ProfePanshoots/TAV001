@@ -1,3 +1,7 @@
+npm install -g @ionic/cli
+npm install ionic
+npm install @angular/fire firebase --save
+
 -- CONFIG --
 git config --global user.name "Panshoots"
 git config --global user.email "fr.juillet@profesor.duoc.cl"

@@ -19,9 +19,13 @@ ionic generate page pages/home/pizza
 ionic generate page pages/home/despacho
 ionic generate page pages/home/
 
-ionic g service services/api
-ionic g service services/firebase
+ionic g service services/apis/apipokemon
+ionic g service services/firebase/authfirebase
+ionic g service services/firebase/crudfirebase
 
 ionic g component components/carduser
 ionic g component components/header
 ionic g component components/footer
+
+ionic g interface interfaces/IPizza
+ionic g interface interfaces/IPizzas

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthfirebaseService } from 'src/app/services/firebase/authfirebase.service';
 
 @Component({
@@ -13,7 +14,9 @@ export class LoginPage implements OnInit {
   emailValue!: string; // CAPTURAR LA INFO DEL FORM
   passwordValue!: string; // CAPTURAR LA INFO DEL FORM
 
-  constructor(private formBuilder: FormBuilder, private authFire:AuthfirebaseService) {
+  constructor(private formBuilder: FormBuilder, 
+    private authFire:AuthfirebaseService,
+    private router:Router) {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
@@ -26,6 +29,7 @@ export class LoginPage implements OnInit {
   async login() {
     try {
       await this.authFire.login(this.emailValue,this.passwordValue);
+      
     } catch (error) {
       
     }

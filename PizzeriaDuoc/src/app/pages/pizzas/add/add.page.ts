@@ -14,7 +14,8 @@ export class AddPage implements OnInit {
   // CREAMOS UN INTANCIA PARA EL TEST
   pizza: Ipizza = {
     nombre: 'Pizza con manjar1111',
-    tipo: 'Esquizo'
+    tipoId: 'Esquizo',
+    imagen: ''
   }
 
   constructor(

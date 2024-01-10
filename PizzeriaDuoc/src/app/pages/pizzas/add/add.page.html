@@ -17,7 +17,11 @@
         <ion-input [(ngModel)]="pizza.nombre" type="text" label="Nombre" labelPlacement="floating" ></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input [(ngModel)]="pizza.tipo" type="text" label="Tipo" labelPlacement="floating" ></ion-input>
+        <ion-select [(ngModel)]="pizza.tipoId" label="Tipo:" placeholder="Favorite Fruit">
+          <ion-select-option value="lKBajmeCBs9zJQAEnmEs">Todas las carnes</ion-select-option>
+          <ion-select-option value="hUsQOfQHvWv5EQic3QaS">Vegana</ion-select-option>
+        </ion-select>
+        
       </ion-item>
       <ion-button color="primary" (click)="addPizza()">Agregar</ion-button>
     </ion-card-content>

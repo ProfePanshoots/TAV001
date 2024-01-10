@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Ipizza } from 'src/app/interfaces/ipizza';
 import { Ipizzas } from 'src/app/interfaces/ipizzas';
+import { ITipo } from 'src/app/interfaces/itipo';
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +29,9 @@ export class CrudfirebaseService {
 
   getPizzaById(collectionName:string, documentId:string) {
     return this.fire.collection<Ipizzas>(collectionName).doc(documentId).valueChanges();
+  }
+
+  getTipoById(collectionName:string, documentId:string) {
+    return this.fire.collection<ITipo>(collectionName).doc(documentId).valueChanges();
   }
 }

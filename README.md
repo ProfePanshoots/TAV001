@@ -16,7 +16,7 @@ These are the prerequisites so that you can use the project on your computer wit
 
 ### Installation
 ---------------------
-<p align="right">(<a href="top">back to top</a>)</p>
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Roadmap
 - [x] Add Splash Screen.

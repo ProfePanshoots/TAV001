@@ -31,9 +31,20 @@ export class AuthfirebaseService {
   async logout() {
     try {
       await this.auth.signOut();
+      
       console.log("SESION FINALIZADA");
     } catch (error) {
       console.error("ERROR AL FINALIZAR SESION");
     }
+  }
+
+  checkAuthentication() {
+    return new Promise((resolve, reject) => {
+      this.auth.onAuthStateChanged((user) => {
+        resolve(user);
+      }, (error) => {
+        reject(error);
+      });
+    });
   }
 }
